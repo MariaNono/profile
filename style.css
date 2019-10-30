@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Space+Mono:400,400i,700,700i&display=swap');
+
+body {
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.25;
+  background-image: url("https://media.giphy.com/media/dvreHY4p06lzVSDrvj/giphy.gif");
+  background-size: cover;
+  width: 100vw;
+}
+
+
+h1, h2 {
+  color: #000;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+}
+
+a:hover {
+
+}
+
+.card {
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 30px;
+  /*border: 1px solid lightgrey;*/
+}
+
+.img-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  margin: 10px 0 25px 0;
+  /*box-shadow: 106px 0px rgb(0,237,106);*/
+}
+
+.list-inline {
+  padding: 0px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 5px;
+  list-style: none;
+  color: #eee;
+  font-size: 30px;
+}
+
+i {
+  color: #888;
+}
+
+.btn {
+  color: white;
+  padding: 15px 20px;
+  border-radius: 2px;
+  background-color: #19ff7c;
+  margin: 30px auto;
+  vertical-align: center;
+  width: 170px;
+  box-shadow: 6px 6px #000;
+}
+
+.container {
+  width: 700px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
