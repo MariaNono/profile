@@ -73,6 +73,14 @@ i {
   vertical-align: center;
   width: 170px;
   box-shadow: 6px 6px #000;
+  transition: all 0.1s;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px #000;
+  transform: translateY(2px);
+  transform: scale(95%);
+
 }
 
 .container {
