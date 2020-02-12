@@ -9,8 +9,8 @@ body {
   background-image: url("https://media.giphy.com/media/dvreHY4p06lzVSDrvj/giphy.gif");
   background-size: cover;
   width: 100vw;
+  margin: 0;
 }
-
 
 h1, h2 {
   color: #000;
@@ -27,13 +27,9 @@ a{
   font-weight: 400;
 }
 
-a:hover {
-
-}
-
 .card {
   margin: 40px auto;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, .8);
   border-radius: 4px;
   text-align: center;
   padding: 30px;
@@ -41,8 +37,8 @@ a:hover {
 }
 
 .img-circle {
-  width: 250px;
-  height: 250px;
+  width: 240px;
+  height: 240px;
   border-radius: 100%;
   margin: 10px 0 25px 0;
   /*box-shadow: 106px 0px rgb(0,237,106);*/
@@ -73,19 +69,23 @@ i {
   vertical-align: center;
   width: 170px;
   box-shadow: 6px 6px #000;
-  transition: all 0.1s;
+  transition: all 0.1s ease-in-out;
 }
 
 .btn:hover {
-  box-shadow: 1px 1px #000;
-  transform: translateY(2px);
-  transform: scale(95%);
+  box-shadow: 2px 2px #000;
+  transform: translate(3px, 3px);
+  transform: scale(0.97);
 
 }
 
 .container {
-  width: 700px;   /* This sets the width */
+  width: 460px;   /* This sets the width */
   margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+i {
+  color: #8c0087;
 }
 
 
@@ -97,8 +97,33 @@ i {
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
+  html {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
   .container {
-    width: 300px;
+    width: 90vw;
+    margin: 30px auto;
+  }
+
+  .card {
+    width: 80vw;
+    padding: 7px;
+    margin: 0 auto 18px auto;
+  }
+
+  .img-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
   }
 }
 
