@@ -9,6 +9,7 @@ body {
   background-color: #000;
   background-image: url("https://media.giphy.com/media/dvreHY4p06lzVSDrvj/giphy.gif");
   background-size: cover;
+  background-attachment: fixed;
   width: 100vw;
   margin: 0;
 }
