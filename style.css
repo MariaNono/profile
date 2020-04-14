@@ -6,11 +6,13 @@ body {
   color: #000;
   font-size: 18px;
   line-height: 1.25;
+  background-color: #000;
   background-image: url("https://media.giphy.com/media/dvreHY4p06lzVSDrvj/giphy.gif");
   background-size: cover;
+  background-attachment: fixed;
   width: 100vw;
+  margin: 0;
 }
-
 
 h1, h2 {
   color: #000;
@@ -27,25 +29,27 @@ a{
   font-weight: 400;
 }
 
-a:hover {
-
-}
-
 .card {
   margin: 40px auto;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, .8);
   border-radius: 4px;
   text-align: center;
   padding: 30px;
-  /*border: 1px solid lightgrey;*/
+}
+
+.card-img {
+  padding: 24px 0 24px 0;
 }
 
 .img-circle {
-  width: 250px;
-  height: 250px;
+  width: 240px;
+  height: 240px;
   border-radius: 100%;
   margin: 10px 0 25px 0;
-  /*box-shadow: 106px 0px rgb(0,237,106);*/
+}
+
+#ferrari {
+  transform: scaleX(-1);
 }
 
 .list-inline {
@@ -69,15 +73,28 @@ i {
   padding: 15px 20px;
   border-radius: 2px;
   background-color: #19ff7c;
+  background-image: linear-gradient(45deg, #8effff, #19ff7c);
   margin: 30px auto;
   vertical-align: center;
-  width: 170px;
+  width: 190px;
   box-shadow: 6px 6px #000;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px #000;
+  transform: translate(3px, 3px);
+  transform: scale(0.97);
+
 }
 
 .container {
-  width: 700px;   /* This sets the width */
+  width: 460px;   /* This sets the width */
   margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+i {
+  color: #8c0087;
 }
 
 
@@ -89,8 +106,37 @@ i {
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
+/*  html {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+  }*/
   .container {
-    width: 300px;
+    width: 90vw;
+    margin: 30px auto;
+  }
+
+  .card {
+    width: 80vw;
+    padding: 7px;
+    margin: 0 auto 18px auto;
+  }
+  .card-img {
+    padding: 7px 0 7px 0;
+    width: calc(80vw + 14px);
+  }
+
+  .img-circle {
+    width: 136px;
+    height: 136px;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
   }
 }
 
